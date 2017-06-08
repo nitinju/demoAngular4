@@ -1,0 +1,10 @@
+<p>
+  <ngb-alert [dismissible]="false" (close)="closeAlert()">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
+<p *ngFor="let item of alerts">
+  <ngb-alert>{{item.message}}</ngb-alert>
+</p>
+<!-- <app-button></app-button> -->
